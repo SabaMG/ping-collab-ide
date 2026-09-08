@@ -1,0 +1,4 @@
+backend/.idea/*
+backend/target/*
+backend/META-INF/
+.idea/

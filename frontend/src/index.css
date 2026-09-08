@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Inter;
+    src: url('../src/assets/fonts/inter.ttf');
+}
+
+@font-face {
+    font-family: Doto;
+    src: url('../src/assets/fonts/doto.ttf');
+}
+
+@import 'tailwindcss';
+
+@theme {
+    --font-inter: 'Inter', sans-serif;
+    --font-doto: 'Doto', sans-serif;
+
+    --color-primary: #4f46e5;
+    --color-primary-dark: #4338ca;
+
+    --color-button: #eef2ff;
+    --color-background: #bdd1da;
+}
+
+body {
+    @apply font-inter;
+}
