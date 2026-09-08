@@ -29,7 +29,8 @@ services:
     build: ./frontend
     depends_on:
       - backend
-    ports:
-      - "8088:80"
+    # For local testing, expose with: ports: ["8088:80"].
+    # On Dokploy, leave unpublished — Traefik routes to container port 80
+    # via the domain attached to this service.
 volumes:
   pingdata:
